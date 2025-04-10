@@ -16,6 +16,3 @@ The primary goal of the KPI Dashboard is to provide critical insights into the *
 4. **Tracking Work in Progress:** 
     - Provide visibility into the **number of beds in different production stages**, enabling the identification of potential bottlenecks, managing workload distribution, and ensuring deadlines are met.
 
-## KPI Dashboard: Components
-
-The KPI Dashboard is built using the **DevExpress PivotGrid**, a powerful data analysis tool that allows for interactive summarization, filtering, and visualization of large datasets.
