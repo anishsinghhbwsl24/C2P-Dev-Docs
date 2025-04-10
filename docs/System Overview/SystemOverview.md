@@ -1,12 +1,12 @@
 # System Overview: C2P (Convert to Print) Order Management for Sigo Signs  
   
-## 1. Overview  
+## Overview  
   
 C2P (Convert to Print) is the order management system for Sigo Signs, handling orders from multiple sources, including Amazon and Magento-based websites. The system integrates with Teapplix, which serves as the central repository for all orders and their attributes.  
   
 Orders are processed at both Item Level and Order Level, ensuring smooth tracking from creation to shipping.  
   
-## 2. Order Sources  
+## Order Sources  
   
 **Marketplaces:**  
   
@@ -17,7 +17,7 @@ SigoSigns Website ([sigosigns.com](http://sigosigns.com))
   
 **Teapplix** – The central source for all orders, containing attributes such as order details, item specifications, and customer information.  
   
-## 3. Order Processing Workflow  
+## Order Processing Workflow  
   
 **Step 1: Fetching Orders from Teapplix**  
   
@@ -68,7 +68,7 @@ Printing, cutting, and engraving as required.
 Shipping  
 Orders are routed for shipment after production is complete.  
   
-## 4. Order-Level Status Flow  
+## Order-Level Status Flow  
   
 | Status Code | Description |  
 | ------------------- | ----------------------------------------------- |  

@@ -2,11 +2,10 @@
 
 https://docs.devexpress.com/WindowsForms/images/xtrapivotgrid_area_locations4659.png
 
-
 * **Row Headers:**
     * **Bed type:** Categorization of beds (e.g., Regular, Mixed Sizes, Labels, Decals).
-    * **Bed Size:** Determined by `groupsize` if the bed was created based on it; otherwise, it reflects the `Signsize`.
-    * **Bed name:** The unique identifier for a specific bed.
+    * **Bed Size:** `GroupSize` if the bed was created based on it; otherwise, it is the `SignSize`.
+    * **Bed name:** A single bed.
     * **Status:** The sequence of stages a bed progresses through.
         * **Jig beds:** Ready -> Printing -> Printed -> Routing -> Routed
         * **Non-jig beds:** Ready -> Printing -> Printed -> Cutting -> Cutting Done -> Routing -> Routed
@@ -32,5 +31,5 @@ https://docs.devexpress.com/WindowsForms/images/xtrapivotgrid_area_locations4659
 
 ## Important Considerations
 
-* **User-Level Metrics (Idle Time, Print Time, Cut Time):** These metrics are calculated at the user level. The dashboard displays the aggregated values for all users currently visible in the PivotGrid UI. To view the metrics for a specific user, apply a user filter. The underlying `Printing` and `Printed` events used for calculation are based on the selected users, not necessarily the beds displayed.
+* **User-Level Metrics (Idle Time, Print Time, Cut Time):** These metrics are calculated at the user level. The Metrics are the total (sum) values of individual idle time, print time and cut time for all users currently visible in the PivotGrid UI. To view the metrics for a specific user, apply a user filter to select the specific user(s). The underlying `Printing` and `Printed` events used for calculation are based on the selected users, not on the basis of the beds displayed.
 * **Shipped Count Discrepancy:** The `Shipped count` displayed in the PivotGrid UI (as a data header) might be higher than the `Shipped` metric. This can occur because a single order can be present on multiple beds. The UI will count each instance of the shipped order on different beds, leading to overcounting when aggregated. The `Shipped` metric resolves this by counting only the distinct orders associated with the displayed shipped beds.
