@@ -1,3 +1,7 @@
+## KPI Dashboard: Components
+
+The KPI Dashboard is built using the **DevExpress PivotGrid**, a powerful data analysis tool that allows for interactive summarization, filtering, and visualization of large datasets.
+
 ## Definitions: PivotGrid Area Locations
 
 https://docs.devexpress.com/WindowsForms/images/xtrapivotgrid_area_locations4659.png
