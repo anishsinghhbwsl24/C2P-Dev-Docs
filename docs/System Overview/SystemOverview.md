@@ -6,13 +6,15 @@ C2P (Convert to Print) is the order management system for Sigo Signs, handling o
   
 Orders are processed at both Item Level and Order Level, ensuring smooth tracking from creation to shipping.  
   
+![C2P Order Management Flowchart](imgs/FlowChart.png)
+
 ## Order Sources  
   
 **Marketplaces:**  
   
 Amazon  
 SigoSigns Website ([sigosigns.com](http://sigosigns.com))  
-  
+
 **Order Management Platform:**  
   
 **Teapplix** – The central source for all orders, containing attributes such as order details, item specifications, and customer information.  
@@ -31,7 +33,7 @@ SigoSigns Website ([sigosigns.com](http://sigosigns.com))
   
 **Initial Status:**  
 * **Stock Orders:** `PDFStatus`: `ToPrint` (Ready for printing)  
-* **Custom Orders:** `PDFStatus`: `JSONDownloaded` (Customization needed)  
+* **Custom Orders:** `PDFStatus`: `JSONDownloaded` (Customization needed) 
 **Populated Fields:**  
 * `JSONFilePath` (for custom orders)  
 * Other relevant order details  
@@ -50,7 +52,7 @@ SigoSigns Website ([sigosigns.com](http://sigosigns.com))
 **Storage:**  
 * Art files are stored in Dropbox  
 * PDFs are saved with metadata such as ASIN, SKU, and SignSize  
-  
+
 **Step 3: Updating PDF Paths and Status**  
   
 **Modules:**  
@@ -59,7 +61,7 @@ SigoSigns Website ([sigosigns.com](http://sigosigns.com))
 **Function:** After designers fix and move PDFs to a fixed folder, these modules update the status.  
 **Final Status Before Printing:**  
 * `PDFStatus`: `ToPrint`  
-  
+
 **Step 4: Printing & Order Fulfillment (C&P - Convert & Print)**  
   
 Creation of beds from bed layout.  
